@@ -10,7 +10,10 @@
     <ClCompile Include="Server.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="cash.cpp">
+    <ClCompile Include="cash_practice.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline_practice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
