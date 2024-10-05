@@ -16,5 +16,8 @@
     <ClCompile Include="pipeline_practice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="shared_resource.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
