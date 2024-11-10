@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Server.cpp">
+    <ClCompile Include="server.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="cash_practice.cpp">
@@ -19,7 +19,10 @@
     <ClCompile Include="shared_resource.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Lock.cpp">
+    <ClCompile Include="lock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="spin_lock.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
