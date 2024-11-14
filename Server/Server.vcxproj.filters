@@ -5,34 +5,43 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Lecture">
+      <UniqueIdentifier>{0fd8e7ed-e953-4367-843f-57354853b0b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="server.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="cash_practice.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pipeline_practice.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="shared_resource.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="lock.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="spin_lock.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Lecture</Filter>
     </ClCompile>
     <ClCompile Include="dead_lock.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Lecture</Filter>
     </ClCompile>
     <ClCompile Include="event_and_condition_variable.cpp">
+      <Filter>소스 파일\Lecture</Filter>
+    </ClCompile>
+    <ClCompile Include="lock.cpp">
+      <Filter>소스 파일\Lecture</Filter>
+    </ClCompile>
+    <ClCompile Include="pipeline_practice.cpp">
+      <Filter>소스 파일\Lecture</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_resource.cpp">
+      <Filter>소스 파일\Lecture</Filter>
+    </ClCompile>
+    <ClCompile Include="spin_lock.cpp">
+      <Filter>소스 파일\Lecture</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="smrat_pointer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Lecture</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
   </ItemGroup>
 </Project>
