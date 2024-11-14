@@ -31,5 +31,8 @@
     <ClCompile Include="event_and_condition_variable.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="smrat_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
