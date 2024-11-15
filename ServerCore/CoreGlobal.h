@@ -1,5 +1,6 @@
 #pragma once
-class CoreGlobal
-{
-};
+
+class ThreadManager;
+
+extern std::unique_ptr<ThreadManager> GThreadManager;
 

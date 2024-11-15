@@ -2,7 +2,7 @@
 #include <iostream>
 #include <thread>
 #include <vector>
-using namespace std;
+//using namespace std;
 #include <atomic>
 #include <mutex>
 #include <windows.h>
