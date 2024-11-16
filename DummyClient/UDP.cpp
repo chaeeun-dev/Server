@@ -1,23 +1,23 @@
-ï»¿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 using namespace std::chrono_literals;
 
-// í´ë¼
-// 1) ì†Œì¼“ ìƒì„± (socket)
-// 2) ì„œë²„ì— ì—°ê²° ìš”ì²­ (connect)
-// 3) ì„œë²„ì™€ í†µì‹ 
-
+// Å¬¶ó
+// 1) »õ·Î¿î ¼ÒÄÏ »ı¼º
+// 2) ¼­¹ö¿Í Åë½Å
 int main()
 {
 	WSAData wsaData;
 	if (::WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
 		return 0;
 
+	std::this_thread::sleep_for(1s);
+
 	// ad : Address Family (AF_INET = IPv4, AF_INET6 = IPv6)
 	// type : TCP(SOCK_STREAM) vs UDP(SOCK_DGRAM)
 	// protocol : 0
 	// return : descriptor
-	SOCKET clientSocket = ::socket(AF_INET, SOCK_STREAM, 0);
+	SOCKET clientSocket = ::socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	if (clientSocket == INVALID_SOCKET)
 		return 0;
 
@@ -28,16 +28,16 @@ int main()
 	::inet_pton(AF_INET, "127.0.0.1", &serverAddr.sin_addr);
 	serverAddr.sin_port = ::htons(7777); // 80 : HTTP
 
-	if (::connect(clientSocket, (SOCKADDR*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR)	// ì„œë²„ì— ì—°ê²°
-		return 0;
+	while (true)
+	{
+		char sendBuffer[100] = "Hello! I am Client";
+		int32 sendLen = ::sendto(clientSocket, sendBuffer, sizeof(sendBuffer), 0, (SOCKADDR*)&serverAddr, sizeof(serverAddr));
 
-	// ---------------------------
-	// ì—°ê²° ì„±ê³µ! ì´ì œë¶€í„° ë°ì´í„° ì†¡ìˆ˜ì‹  ê°€ëŠ¥!
-	std::cout << "Connected To Server!" << std::endl;
+		std::this_thread::sleep_for(0.01s);
+	}
 
 	// --------------------------
-	
-	// ì •ë¦¬
+
 	::closesocket(clientSocket);
 	::WSACleanup();
 }
