@@ -9,11 +9,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Lecture">
+    <Filter Include="소스 파일\Multithread">
       <UniqueIdentifier>{f7b06d8e-f8aa-40f9-82ae-f80772b88b7b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Lecture\TCP vs UDP">
-      <UniqueIdentifier>{ad88278e-f5fb-4462-8766-209fa93b338e}</UniqueIdentifier>
+    <Filter Include="소스 파일\NetworkProgramming">
+      <UniqueIdentifier>{1e186e3d-7bae-4977-8452-bbcd280f6869}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -23,8 +23,11 @@
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="NonlockingSocket.cpp">
+      <Filter>소스 파일\NetworkProgramming</Filter>
+    </ClCompile>
     <ClCompile Include="UDP.cpp">
-      <Filter>소스 파일\Lecture\TCP vs UDP</Filter>
+      <Filter>소스 파일\NetworkProgramming</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

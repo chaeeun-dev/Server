@@ -1,4 +1,4 @@
-ï»¿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 #include <thread>
 #include <vector>
@@ -31,7 +31,7 @@ int main()
 		SOCKET clientSocket = ::accept(listenSocket, (SOCKADDR*)&clientAddr, &addrLen);
 		if (clientSocket == INVALID_SOCKET)
 		{
-			// ì›ë˜ ë¸”ë¡œí‚¹í–ˆì–´ì•¼ í–ˆëŠ”ë°... ë„ˆê°€ ë…¼ë¸”ë¡œí‚¹ìœ¼ë¡œ í•˜ë¼ë©°?
+			// ¿ø·¡ ºí·ÎÅ·Çß¾î¾ß Çß´Âµ¥... ³Ê°¡ ³íºí·ÎÅ·À¸·Î ÇÏ¶ó¸ç?
 			if (::WSAGetLastError() == WSAEWOULDBLOCK)
 				continue;
 		}
@@ -45,7 +45,7 @@ int main()
 			int32 recvLen = ::recv(clientSocket, recvBuffer, sizeof(recvBuffer), 0);
 			if (recvLen == SOCKET_ERROR)
 			{
-				// ì›ë˜ ë¸”ë¡œí‚¹í–ˆì–´ì•¼ í–ˆëŠ”ë°... ë„ˆê°€ ë…¼ë¸”ë¡œí‚¹ìœ¼ë¡œ í•˜ë¼ë©°?
+				// ¿ø·¡ ºí·ÎÅ·Çß¾î¾ß Çß´Âµ¥... ³Ê°¡ ³íºí·ÎÅ·À¸·Î ÇÏ¶ó¸ç?
 				if (::WSAGetLastError() == WSAEWOULDBLOCK)
 					continue;
 

@@ -17,9 +17,13 @@
 #include <iostream>
 //using namespace std;
 #include <winsock2.h>
+#include <mswsock.h>
 #include <ws2tcpip.h>
 #include <stdio.h>
 #include <windows.h>
+#include <assert.h>
+
+#include "SocketUtils.h"
 
 // Need to link with Ws2_32.lib
 #pragma comment(lib, "ws2_32.lib")
