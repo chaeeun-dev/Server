@@ -46,7 +46,7 @@
     <ClCompile Include="lock.cpp">
       <Filter>소스 파일\Multithread</Filter>
     </ClCompile>
-    <ClCompile Include="NonlockingSocket.cpp">
+    <ClCompile Include="NonblockingSocket.cpp">
       <Filter>소스 파일\NetworkProgramming</Filter>
     </ClCompile>
   </ItemGroup>
