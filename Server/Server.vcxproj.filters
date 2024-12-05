@@ -31,7 +31,7 @@
     <ClCompile Include="smrat_pointer.cpp">
       <Filter>소스 파일\Multithread</Filter>
     </ClCompile>
-    <ClCompile Include="UDP.cpp">
+    <ClCompile Include="2.UDP.cpp">
       <Filter>소스 파일\NetworkProgramming</Filter>
     </ClCompile>
     <ClCompile Include="cash_practice.cpp">
@@ -46,11 +46,19 @@
     <ClCompile Include="lock.cpp">
       <Filter>소스 파일\Multithread</Filter>
     </ClCompile>
-    <ClCompile Include="NonblockingSocket.cpp">
+    <ClCompile Include="3.NonblockingSocket.cpp">
+      <Filter>소스 파일\NetworkProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="4.Select.cpp">
+      <Filter>소스 파일\NetworkProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="4.WSAEventSelect.cpp">
       <Filter>소스 파일\NetworkProgramming</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="pch.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

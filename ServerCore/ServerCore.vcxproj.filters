@@ -43,6 +43,9 @@
     <ClInclude Include="SocketUtils.h">
       <Filter>소스 파일\Network</Filter>
     </ClInclude>
+    <ClInclude Include="TestMain.h">
+      <Filter>소스 파일\Main</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="SocketUtils.cpp">
       <Filter>소스 파일\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMain.cpp">
+      <Filter>소스 파일\Main</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
