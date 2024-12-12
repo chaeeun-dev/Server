@@ -35,6 +35,9 @@
     <ClCompile Include="4.WSAEventSelect.cpp">
       <Filter>소스 파일\NetworkProgramming</Filter>
     </ClCompile>
+    <ClCompile Include="5.Overlapped.cpp">
+      <Filter>소스 파일\NetworkProgramming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
